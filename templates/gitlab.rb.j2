@@ -48,6 +48,9 @@ gitlab_rails['ldap_allow_username_or_email_login'] = true
 gitlab_rails['ldap_base'] = '{{ gitlab_ldap_base }}'
 {% endif %}
 
+# shell config
+gitlab_rails['gitlab_shell_ssh_port'] = '{{ gitlab_shell_ssh_port }}'
+
 # GitLab Nginx
 ## See https://gitlab.com/gitlab-org/omnibus-gitlab/blob/master/doc/settings/nginx.md
 {% if gitlab_nginx_listen_port is defined %}
